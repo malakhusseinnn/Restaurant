@@ -1,11 +1,11 @@
 let recipes = document.querySelector(".recipes");
 
 function getRecipes(link){
-    recipes.innerHTML = "";
     let xml = new XMLHttpRequest();
     xml.open("GET",link,true);
     xml.onload = () => {
         if(xml.status == 200){
+        recipes.innerHTML = "";
         let response = JSON.parse(xml.responseText);
         let data = response.recipes;
         data.map((e)=>{
