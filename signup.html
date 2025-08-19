@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="loginAndsignup.css">
+</head>
+
+<body>
+    <p class="signup-p">Sign Up</p>
+    <form class="signup-form">
+        <div class="input-field">
+            <div class="inpt"><input type="text" name="user-name" placeholder="Enter your username" class="user-name">
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+            <div class="username-validation"></div>
+        </div>
+
+        </div>
+        <div class="input-field">
+            <div class="inpt"><input type="text" name="email" class="email" placeholder="Enter your email"> <i
+                    class="fa-solid fa-envelope"></i></div>
+            <div class="email-validation"></div>
+        </div>
+        <div class="input-field">
+            <div class="inpt"><input type="text" name="phone" class="phone-number" placeholder="Enter your phone number"> <i
+                    class="fa-solid fa-phone"></i></div>
+            <div class="phone-validation"></div>
+        </div>
+
+        <div class="input-field">
+            <div class="inpt"> <input type="password" name="password" placeholder="Enter your password"
+                    class="password">
+                <span class="eye">
+                    <i class="fa-solid fa-eye"></i></span>
+            </div>
+            <div class="password-validation"></div>
+        </div>
+        <div class="input-field">
+            <div class="inpt"> <input type="password" name="confirm-password" placeholder="Confirm password"
+                    class="confirmed-password">
+                <span class="eye">
+                    <i class="fa-solid fa-eye"></i></span>
+            </div>
+            <div class="confirm-validation"></div>
+        </div>
+        <button class="signup-btn">Sign Up <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+        <div class="signup-validation-message"></div>
+    </form>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>

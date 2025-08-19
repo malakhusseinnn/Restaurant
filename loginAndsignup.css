@@ -1,0 +1,111 @@
+:root{
+    --beige:#f7d9bf;
+    --main:darkslategray;
+    --gray:rgb(129, 129, 129);
+    --text:rgb(245, 245, 220); 
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+}
+
+body{
+    max-width: 100svw;
+    min-height: 100svh;
+    font-family: "Delius", cursive;
+    background-color: var(--main);
+}
+
+.login-p , .signup-p{
+    font-size: 40px;
+    color: var(--text);
+    font-style: italic;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.login-p::before , .signup-p::before{
+    content: "";
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:var(--text);
+    border-radius: 10px;
+}
+
+.login-form , .signup-form{
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% auto 0px auto;
+    width: 40%;
+    height: 60vh;
+    border-radius: 10px;
+    
+}
+
+.input-field{
+    width: 80%;
+}
+
+.inpt{
+    background-color: white;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    font-style: italic;
+}
+
+.eye:hover{
+    cursor: pointer;
+}
+
+.login-btn , .signup-btn{
+    background-color: var(--main);
+    padding: 15px 20px;
+    width: 25%;
+    color: var(--text);
+    border-radius: 20px;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.login-btn:hover , .signup-btn:hover{
+    background-color: var(--gray);
+    color: var(--main);
+    border: 2px solid   var(--main);
+
+
+}
+
+::selection{
+    background-color: var(--beige);
+    color: darkslategray;
+}
+
+.valid{
+    color: rgb(0, 80, 0);
+    font-size: 12px;
+}
+
+.validation-message{
+    color: rgb(106, 2, 2);
+    font-size: 12px;
+}

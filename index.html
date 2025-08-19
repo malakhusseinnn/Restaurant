@@ -3,90 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyRestaurant</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="welcome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
-<body class="restaurant-body">
-   <header>
-        <p class = "restaurant">MyRestaurant</p>
-        <nav>
-            <ul>
-                <a href="#home"><li>Home</li></a>
-                <a href="#about"><li>About</li></a>
-                <a href="findRecipe.html" target="_blank">Recipes</a>
-                <a href="#contact-us"><li>Contact Us</li></a>
-            </ul>
-        </nav>
-   </header>
+<body>
+    <p class="welcome-p">Welcome to MyRestaurant &hearts; </p>
 
-   <section class="home" id="home">
-     <div class="p">
-        <p class="welcome"></p>
-        <p class="sub-title">Where every bite tells a story..</p>
-        <p class="des">
-            At MyRestaurant, we bring you a fusion of flavors crafted from the freshest ingredients. 
-                Whether you're here for a hearty breakfast, a cozy lunch, or a luxurious dinner, 
-                our chefs are dedicated to making every meal unforgettable &hearts;.
-        </p>
-     </div>
-     <div class="home-layout"></div>
-   </section>
-
-   <section class="about" id="about">
-        <h2>About Us</h2>
-        <p>
-            <strong>MyRestaurant</strong>, a cozy spot where passion meets flavor.  
-            Since 2015, we've been serving handcrafted dishes made from the freshest ingredients, 
-            inspired by traditional family recipes and given a modern twist.
-        </p>
-        <p>
-            Whether you're here for a quick lunch, a romantic dinner, or a gathering with friends, 
-            our goal is to make every visit memorable.  
-            From sizzling grills to indulgent desserts, we bring you food that warms the heart and excites the taste buds.
-        </p>
-        <p>
-            At MyRestaurant, it's not just about the food, it's about the experience.  
-            Come hungry, leave happy &hearts;.
-        </p>
-    
-    </section>
-
-    <section class="contact-us" id="contact-us">
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p> We'd love to hear from you! Whether it's a reservation, feedback, or just a friendly hello get in touch with us &hearts;.</p>
-        </div>
-        
-        <form class="contact-form">
-            <div class="input-div">
-                <label for="name">Name: </label>
-                <input type="text" name="name" placeholder="Enter your name.." id="name">
-            </div>
-            <div class="input-div">
-                <label for="email">Email: </label>
-                <input type="email" name="email" placeholder="Enter your email.." id="email">
-            </div>
-            <div class="input-div">
-                <label for="message">Message: </label>
-                <input type="text" id="message" name="message" placeholder="Enter your message.." class="message">
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
+    <div class="btns">
+        <a href="login.html"><button class="login-btn">Log In <i class="fa-solid fa-right-to-bracket"></i></button></a>
+        <a href="signup.html"><button class="signup-btn">Sign Up <i class="fa-solid fa-arrow-right-to-bracket"></i></button></a>
+    </div>
 
 
-
-    <footer>
-           <p><strong> <i class="fa-solid fa-location-dot"></i> Address:</strong> 123 Flavor Street, Foodie City |</p>
-            <p><strong><i class="fa-solid fa-phone"></i> Phone:</strong> +201111111111 |</p>
-            <p><strong> <i class="fa-solid fa-envelope"></i> Email:</strong> contact@myrestaurant.com |</p>
-    </footer>
-
-    
-
-
-
-    <script src="app.js"></script>
 </body>
 </html>

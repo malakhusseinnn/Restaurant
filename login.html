@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginAndsignup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <p class="login-p">Log In</p>
+    <form class="login-form">
+        <div class="input-field">
+            <div class="inpt"><input type="text" name="email" class = "email-login" placeholder="Enter your email"> <i
+                class="fa-solid fa-envelope"></i></div>
+                <div class="email-validation"></div>
+        </div>
+        <div class="input-field">
+            <div class="inpt"> <input type="password" name="password" placeholder="Enter your password" class="password-login">
+            <span class="eye">
+                <i class="fa-solid fa-eye"></i></span></div>
+                <div class="password-validation"></div>
+        </div>
+        <div><input type="checkbox" name="remember-me" id="remember-me">
+            <label for="remember-me">Remember Me</label>
+        </div>
+        <button class="login-btn">Log In <i class="fa-solid fa-right-to-bracket"></i></button>
+        <p class="no-account">Don't have an account? <span><a href="signup.html">Sign Up</a></span></p>
+        <div class="login-validation-message"></div>
+    </form>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
