@@ -44,6 +44,8 @@ searchInput.addEventListener("input", () => {
 
 })
 
+
+
 recipes.addEventListener("click", (e) => {
     if (e.target.classList.contains("view-recipe")) {
         let recipeId = e.target.dataset.id;

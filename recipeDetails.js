@@ -1,7 +1,7 @@
 //------------------------ Recipe Details Logic -----------------------------------------
 
-let params = new URLSearchParams(window.location.search);
-let recipeId = params.get("id");
+let link = new URLSearchParams(window.location.search);
+let recipeId = link.get("id");
 
 if (recipeId) {
     let recipeImg = document.querySelector(".recipe-img");
