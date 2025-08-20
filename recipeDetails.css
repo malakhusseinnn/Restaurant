@@ -1,0 +1,107 @@
+:root{
+    --beige:#f7d9bf;
+    --main:darkslategray;
+    --gray:rgb(129, 129, 129);
+    --text:rgb(245, 245, 220); 
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+}
+
+body{
+    max-width: 100svw;
+    min-height: 100svh;
+    font-family: "Delius", cursive;
+    background-color: var(--main);
+}
+
+.recipe{
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--gray);
+    margin: 3% auto;
+
+}
+
+.recipe-img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.recipe-img img{
+    width: 100%;
+    border-radius: 20px;
+    height: 70vh;
+}
+
+.recipe-name{
+    font-size: 35px;
+    color: var(--text);
+    font-style: italic;
+    font-weight: bold;
+    margin: 0px auto;
+    border-bottom: 3px solid var(--main);
+    padding-bottom: 5px;
+}
+
+.ingredients , .instructions{
+    font-size: 25px;
+    color: var(--text);
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.recipe-ingredients ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 0px 20px;
+}
+
+.recipe-ingredients ul li{
+    padding-left: 20px;
+    list-style-type: none;
+
+}
+
+.recipe-ingredients li::before {
+  content: "✦";           
+  position: absolute;
+  left: 0;
+  color: var(--main);            
+}
+
+.recipe-instructions ol{
+    margin-left: 25px;
+    padding: 15px 5px;
+}
+
+.time{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span{
+    color: var(--main);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.cuising{
+    margin: 10px auto;
+    
+}
+
